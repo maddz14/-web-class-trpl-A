@@ -50,12 +50,26 @@ export const Navbar = () => {
     >
       <div className="bg-card/70 backdrop-blur-[25px] border-2 border-accent-purple/20 rounded-3xl shadow-elegant px-6 py-4 w-full max-w-6xl">
         <div className="flex items-center justify-between">
-          {/* Logo */}
+          {/* Logos */}
           <motion.div
-            className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent lg:absolute lg:left-6"
+            className="flex items-center gap-3 lg:absolute lg:left-6"
             whileHover={{ scale: 1.05 }}
           >
-            TRPL
+            <img 
+              src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=100&h=100&fit=crop" 
+              alt="Logo 1" 
+              className="w-10 h-10 rounded-full object-cover border-2 border-accent-purple/30"
+            />
+            <img 
+              src="https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=100&h=100&fit=crop" 
+              alt="Logo 2" 
+              className="w-10 h-10 rounded-full object-cover border-2 border-accent-blue/30"
+            />
+            <img 
+              src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=100&h=100&fit=crop" 
+              alt="Logo 3" 
+              className="w-10 h-10 rounded-full object-cover border-2 border-accent-purple/30"
+            />
           </motion.div>
 
           {/* Desktop Navigation - Centered */}
