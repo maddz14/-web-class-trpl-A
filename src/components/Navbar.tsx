@@ -46,20 +46,20 @@ export const Navbar = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-6xl"
+      className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4"
     >
-      <div className="bg-card/70 backdrop-blur-[25px] border-2 border-accent-purple/20 rounded-3xl shadow-elegant px-6 py-4">
+      <div className="bg-card/70 backdrop-blur-[25px] border-2 border-accent-purple/20 rounded-3xl shadow-elegant px-6 py-4 w-full max-w-6xl">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.div
-            className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent"
+            className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent lg:absolute lg:left-6"
             whileHover={{ scale: 1.05 }}
           >
             TRPL
           </motion.div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-1">
+          {/* Desktop Navigation - Centered */}
+          <div className="hidden lg:flex items-center gap-1 mx-auto">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -80,7 +80,7 @@ export const Navbar = () => {
             variant="ghost"
             size="icon"
             onClick={toggleTheme}
-            className="hidden lg:flex rounded-full"
+            className="hidden lg:flex rounded-full lg:absolute lg:right-6"
           >
             {isDark ? (
               <Sun className="w-5 h-5 text-accent-blue" />
@@ -93,7 +93,7 @@ export const Navbar = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="lg:hidden rounded-full"
+            className="lg:hidden rounded-full ml-auto"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? (
