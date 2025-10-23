@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Github, Linkedin, Mail, User } from "lucide-react";
+import { Github, Instagram, Mail, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const roles = ["Frontend Dev", "Backend Dev", "Full Stack", "UI/UX Designer", "DevOps", "Data Analyst", "Mobile Dev", "Security Specialist"];
@@ -102,9 +102,9 @@ export const Students = () => {
                 </motion.button>
                 <motion.button
                   whileHover={{ scale: 1.2 }}
-                  className="w-8 h-8 rounded-full bg-accent-blue/10 flex items-center justify-center hover:bg-accent-blue hover:text-white transition-all"
+                  className="w-8 h-8 rounded-full bg-accent-purple/10 flex items-center justify-center hover:bg-accent-purple hover:text-white transition-all"
                 >
-                  <Linkedin className="w-4 h-4" />
+                  <Instagram className="w-4 h-4" />
                 </motion.button>
                 <motion.button
                   whileHover={{ scale: 1.2 }}
